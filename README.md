@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚀 Full-Stack Personal Portfolio Website
 
 A modern, high-performance personal portfolio website built with a **React 19 (Vite) frontend**, an **Express.js (Node.js) REST API backend**, and **Prisma ORM** supporting **SQLite (local zero-setup)** and **PostgreSQL (production)**.
@@ -245,3 +246,5 @@ All endpoints will be validated with clear pass/fail status.
 
 ## 📄 License
 MIT License. Free to use and customize for your personal portfolio.
+=======
+
