@@ -1,0 +1,67 @@
+// Prisma Schema for Full-Stack Personal Portfolio Website
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite" // In production on PostgreSQL (Neon/Supabase/Render/Heroku), change to "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Project {
+  id              Int      @id @default(autoincrement())
+  title           String
+  description     String
+  fullDescription String?
+  category        String   @default("Full Stack") // Full Stack, Frontend, Backend, AI / Cloud
+  image           String
+  tags            String   // Comma-separated or JSON list of technologies
+  liveUrl         String?
+  githubUrl       String?
+  featured        Boolean  @default(false)
+  challenges      String?  // Architectural decisions and challenge resolutions
+  features        String?  // JSON string or newline-separated key features
+  order           Int      @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model ContactMessage {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String
+  subject   String?
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Profile {
+  id                Int      @id @default(autoincrement())
+  name              String
+  title             String
+  tagline           String
+  bio               String
+  avatar            String?
+  email             String
+  phone             String?
+  location          String
+  github            String?
+  linkedin          String?
+  twitter           String?
+  resumeUrl         String?
+  yearsExperience   Int      @default(3)
+  projectsCompleted Int      @default(20)
+  clientsSatisfied  Int      @default(15)
+  availableForHire  Boolean  @default(true)
+  updatedAt         DateTime @updatedAt
+}
+
+model Skill {
+  id          Int      @id @default(autoincrement())
+  name        String
+  category    String   // Frontend, Backend, Database, DevOps & Cloud, Tools
+  proficiency Int      @default(80) // 1 to 100 percentage
+  icon        String?
+}

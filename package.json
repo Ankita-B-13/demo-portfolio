@@ -1,0 +1,33 @@
+{
+  "name": "fullstack-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-Stack Personal Portfolio Website with React, Node.js/Express, and Database CMS",
+  "scripts": {
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm run dev:server\" \"npm run dev:client\"",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
+    "build": "npm run build:client",
+    "start": "cd server && npm start",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "react",
+    "nodejs",
+    "express",
+    "prisma",
+    "sqlite",
+    "postgresql"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+

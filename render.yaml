@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: fullstack-portfolio
+    env: node
+    plan: free
+    buildCommand: npm run install:all && npm run build:client && cd server && npx prisma db push && node prisma/seed.js
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATABASE_URL
+        value: "file:./dev.db" # Or use fromDatabase for Render PostgreSQL
+      - key: ADMIN_PASSWORD
+        value: admin123
+      - key: JWT_SECRET
+        generateValue: true
