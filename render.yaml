@@ -13,6 +13,6 @@ services:
       - key: DATABASE_URL
         value: "file:./dev.db" # Or use fromDatabase for Render PostgreSQL
       - key: ADMIN_PASSWORD
-        value: admin123
+        sync:false
       - key: JWT_SECRET
         generateValue: true
