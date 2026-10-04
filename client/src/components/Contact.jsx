@@ -98,13 +98,13 @@ export default function Contact({ profile, onShowToast }) {
                 Contact Information
               </h3>
               <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                I am based in San Francisco, CA and open to both remote opportunities worldwide and local hybrid engineering engagements.
+                I am a Computer Science undergraduate based in Bengaluru, India, open to remote software engineering internships worldwide and local opportunities.
               </p>
 
               <div className="space-y-4 pt-2">
                 
                 <a
-                  href={`mailto:${profile?.email || 'alex.rivera.dev@example.com'}`}
+                  href={`mailto:${profile?.email || 'ankita.cs@example.edu'}`}
                   className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors group"
                 >
                   <div className="w-10 h-10 rounded-xl bg-indigo-50 dark:bg-indigo-950/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
@@ -113,7 +113,7 @@ export default function Contact({ profile, onShowToast }) {
                   <div>
                     <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Email Directly</div>
                     <div className="text-sm font-bold text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                      {profile?.email || 'alex.rivera.dev@example.com'}
+                      {profile?.email || 'ankita.cs@example.edu'}
                     </div>
                   </div>
                 </a>
@@ -125,7 +125,7 @@ export default function Contact({ profile, onShowToast }) {
                   <div>
                     <div className="text-xs font-semibold text-slate-500 dark:text-slate-400">Current Location</div>
                     <div className="text-sm font-bold text-slate-900 dark:text-white">
-                      {profile?.location || 'San Francisco, CA / Remote'}
+                      {profile?.location || 'Bengaluru, India / Remote'}
                     </div>
                   </div>
                 </div>
@@ -147,7 +147,7 @@ export default function Contact({ profile, onShowToast }) {
               {/* Status Note */}
               <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-xs text-emerald-800 dark:text-emerald-300 flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
-                <span>Actively accepting interviews for Q1/Q2 full-stack roles.</span>
+                <span>Actively seeking Software Engineering Internships & New Grad roles.</span>
               </div>
 
             </div>

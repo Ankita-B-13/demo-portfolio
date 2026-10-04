@@ -10,20 +10,21 @@ router.get('/', async (req, res) => {
     if (!profile) {
       // Default fallback profile if not yet seeded
       profile = {
-        name: "Alex Rivera",
-        title: "Senior Full-Stack Engineer & System Architect",
-        tagline: "Architecting resilient, performant full-stack systems and intuitive web experiences.",
-        bio: "I am a passionate software engineer with experience building modern web applications, scalable backends, and elegant user interfaces.",
+        name: "Ankita",
+        title: "Computer Science Undergraduate & Aspiring Full-Stack Developer",
+        tagline: "Computer Science student passionate about full-stack engineering, algorithms, and building intuitive web software.",
+        bio: "I am a Computer Science undergraduate student with strong foundations in Data Structures, Algorithms, and modern web development (React, Node.js, Express, and PostgreSQL/SQLite).",
         avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
-        email: "alex.rivera.dev@example.com",
-        location: "San Francisco, CA / Remote",
-        github: "https://github.com",
-        linkedin: "https://linkedin.com",
-        twitter: "https://twitter.com",
+        email: "ankita.cs@example.edu",
+        phone: "+1 (555) 014-9876",
+        location: "Bengaluru, India / Remote",
+        github: "https://github.com/ankita-dev-cs",
+        linkedin: "https://linkedin.com/in/ankita-dev-cs",
+        twitter: "https://twitter.com/ankita_dev_cs",
         resumeUrl: "#",
-        yearsExperience: 4,
-        projectsCompleted: 24,
-        clientsSatisfied: 18,
+        yearsExperience: 2,
+        projectsCompleted: 14,
+        clientsSatisfied: 10,
         availableForHire: true
       };
     }
@@ -123,3 +124,4 @@ router.delete('/skills/:id', authenticateAdmin, async (req, res) => {
 });
 
 module.exports = router;
+

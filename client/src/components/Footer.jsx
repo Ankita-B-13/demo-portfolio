@@ -20,11 +20,11 @@ export default function Footer({ profile }) {
                 <Terminal className="w-5 h-5" />
               </div>
               <span className="font-bold text-lg tracking-tight text-slate-900 dark:text-white">
-                Alex<span className="text-indigo-600 dark:text-indigo-400">.dev</span>
+                Ankita<span className="text-indigo-600 dark:text-indigo-400">.dev</span>
               </span>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm leading-relaxed">
-              Full-Stack Software Engineer specializing in modern reactive frontends, resilient distributed backends, and high-performance databases.
+              Computer Science undergraduate student passionate about modern reactive frontends, reliable backends, and full-stack software development.
             </p>
           </div>
 
@@ -76,7 +76,7 @@ export default function Footer({ profile }) {
                 <TwitterIcon className="w-4 h-4" />
               </a>
               <a
-                href={`mailto:${profile?.email || 'alex.rivera.dev@example.com'}`}
+                href={`mailto:${profile?.email || 'ankita.cs@example.edu'}`}
                 className="p-2 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
                 aria-label="Email"
               >
@@ -84,7 +84,7 @@ export default function Footer({ profile }) {
               </a>
             </div>
             <p className="text-xs text-slate-400 pt-1">
-              Open to worldwide remote positions & contract architecture engagements.
+              Open to Software Engineering internships, co-ops, and campus project collaborations.
             </p>
           </div>
 

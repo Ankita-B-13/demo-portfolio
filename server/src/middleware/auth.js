@@ -33,3 +33,4 @@ module.exports = {
   JWT_SECRET,
   ADMIN_PASSWORD
 };
+

@@ -14,21 +14,21 @@ async function main() {
   // Create Profile
   const profile = await prisma.profile.create({
     data: {
-      name: "Alex Rivera",
-      title: "Senior Full-Stack Engineer & System Architect",
-      tagline: "Architecting resilient, performant full-stack systems and intuitive web experiences.",
-      bio: "I am a passionate software engineer with 4+ years of experience building modern web applications, scalable distributed backends, and elegant user interfaces. I bridge the gap between complex engineering challenges and delightful human experiences.",
+      name: "Ankita",
+      title: "Computer Science Undergraduate & Aspiring Full-Stack Developer",
+      tagline: "Computer Science student passionate about full-stack engineering, algorithms, and building intuitive web software.",
+      bio: "I am a Computer Science undergraduate student with strong foundations in Data Structures, Algorithms, and modern web development (React, Node.js, Express, and PostgreSQL/SQLite). I love learning new technologies, contributing to impactful projects, and solving real-world challenges through code.",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
-      email: "alex.rivera.dev@example.com",
-      phone: "+1 (555) 019-2834",
-      location: "San Francisco, CA / Remote",
-      github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
+      email: "ankita.cs@example.edu",
+      phone: "+1 (555) 014-9876",
+      location: "Bengaluru, India / Remote",
+      github: "https://github.com/ankita-dev-cs",
+      linkedin: "https://linkedin.com/in/ankita-dev-cs",
+      twitter: "https://twitter.com/ankita_dev_cs",
       resumeUrl: "#",
-      yearsExperience: 4,
-      projectsCompleted: 24,
-      clientsSatisfied: 18,
+      yearsExperience: 2,
+      projectsCompleted: 14,
+      clientsSatisfied: 10,
       availableForHire: true,
     }
   });
@@ -164,10 +164,10 @@ async function main() {
   // Sample contact message
   await prisma.contactMessage.create({
     data: {
-      name: "Sarah Chen",
-      email: "sarah.chen@techventures.io",
-      subject: "Senior Full-Stack Engineer Opportunity",
-      message: "Hi Alex! We were really impressed by your DevFlow project and would love to chat about a lead engineer role on our core platform team.",
+      name: "Campus Recruiter",
+      email: "recruiter@innovatetech.example.com",
+      subject: "Software Engineering Internship Discussion",
+      message: "Hi Ankita! We reviewed your full-stack projects and would love to invite you for an internship interview with our engineering team.",
       read: false,
     }
   });
@@ -184,3 +184,4 @@ main()
   .finally(async () => {
     await prisma.$disconnect();
   });
+

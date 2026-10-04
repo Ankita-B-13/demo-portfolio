@@ -48,24 +48,24 @@ export default function About({ profile }) {
           {/* Left: Bio Story */}
           <div className="lg:col-span-7 space-y-6">
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">
-              Bridging the gap between scalable systems and human-centric interfaces.
+              Passionate Computer Science student building for the modern web.
             </h3>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              {profile?.bio || "I am a full-stack engineer driven by building reliable software that serves real users. Over the years, I've engineered cloud microservices, reactive single-page applications, and high-concurrency databases."}
+              {profile?.bio || "I am an undergraduate Computer Science student driven by curiosity and a deep passion for software engineering. I focus on developing clean, responsive frontend interfaces with React and robust RESTful backends with Node.js, Express, and relational databases."}
             </p>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
-              Whether building an enterprise observability dashboard from scratch or architecting transactional e-commerce APIs, I prioritize clean architecture, automated testing, and developer ergonomics.
+              Throughout my university coursework and independent projects, I have implemented end-to-end web applications, explored database optimizations, and continuously practiced Data Structures and Algorithms. I am actively seeking software engineering internships where I can contribute and grow.
             </p>
 
             {/* Bullet Highlights */}
             <div className="grid sm:grid-cols-2 gap-3 pt-2">
               {[
-                "Modern React, TypeScript & Vite",
-                "Node.js, Express & REST APIs",
-                "PostgreSQL, SQLite & Prisma ORM",
-                "Containerization with Docker",
-                "Clean Code & Unit Testing",
-                "Cloud Deployment on Vercel & Render"
+                "Data Structures & Algorithms (LeetCode / C++)",
+                "Full-Stack Web (React, Node.js, Express)",
+                "Databases (PostgreSQL, SQLite, Prisma)",
+                "Responsive UI with Modern Tailwind CSS",
+                "Git, GitHub & Collaborative Workflow",
+                "RESTful API Design & Verification"
               ].map((highlight, index) => (
                 <div key={index} className="flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-200">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
@@ -80,37 +80,37 @@ export default function About({ profile }) {
             
             <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 shadow-sm hover:shadow-md transition-shadow text-center">
               <div className="text-3xl sm:text-4xl font-extrabold text-indigo-600 dark:text-indigo-400 mb-1">
-                {profile?.yearsExperience || 4}+
+                {profile?.yearsExperience || 2}+
               </div>
               <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Years of Experience
+                Years Coding
               </div>
             </div>
 
             <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 shadow-sm hover:shadow-md transition-shadow text-center">
               <div className="text-3xl sm:text-4xl font-extrabold text-cyan-600 dark:text-cyan-400 mb-1">
-                {profile?.projectsCompleted || 24}+
+                {profile?.projectsCompleted || 14}+
               </div>
               <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Projects Completed
+                Projects Built
               </div>
             </div>
 
             <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 shadow-sm hover:shadow-md transition-shadow text-center">
               <div className="text-3xl sm:text-4xl font-extrabold text-emerald-600 dark:text-emerald-400 mb-1">
-                {profile?.clientsSatisfied || 18}+
+                3.8+
               </div>
               <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Happy Collaborators
+                Cumulative GPA
               </div>
             </div>
 
             <div className="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/80 shadow-sm hover:shadow-md transition-shadow text-center">
               <div className="text-3xl sm:text-4xl font-extrabold text-amber-500 mb-1">
-                99.9%
+                100%
               </div>
               <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
-                Uptime Focus
+                Ready for Internships
               </div>
             </div>
 

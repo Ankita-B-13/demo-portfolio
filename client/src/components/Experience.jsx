@@ -4,60 +4,46 @@ import { Briefcase, GraduationCap, Calendar, MapPin, CheckCircle2 } from 'lucide
 export default function Experience() {
   const experiences = [
     {
-      type: 'work',
-      role: 'Senior Full-Stack Engineer',
-      company: 'ScaleVelocity Technologies',
-      location: 'San Francisco, CA (Remote)',
-      period: '2024 — Present',
-      description: 'Leading the core platforms engineering team building distributed microservices, CI/CD telemetry dashboards, and real-time collaborative web tools.',
-      achievements: [
-        'Architected high-throughput ingestion pipelines handling 5M+ daily webhook events using Node.js streams and Redis queues.',
-        'Spearheaded the migration of monolithic dashboard to modular React 19 micro-frontends, decreasing initial bundle load by 45%.',
-        'Mentored 6 junior/mid engineers and established standardized ESLint, Jest, and CI testing benchmarks.'
-      ],
-      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Docker', 'Redis', 'AWS']
-    },
-    {
-      type: 'work',
-      role: 'Full-Stack Software Engineer',
-      company: 'HyperCraft Digital Studio',
-      location: 'New York, NY',
-      period: '2022 — 2024',
-      description: 'Designed and deployed enterprise-grade SaaS web applications and e-commerce platforms for venture-backed startups.',
-      achievements: [
-        'Built full-stack transactional payment workflows with Stripe API and webhooks, processing over $2.5M in ARR transactions.',
-        'Refactored legacy SQL schemas into PostgreSQL and implemented Prisma ORM migrations with zero downtime.',
-        'Integrated real-time notification microservices with WebSockets and Server-Sent Events (SSE).'
-      ],
-      technologies: ['TypeScript', 'React', 'Node.js', 'Prisma', 'PostgreSQL', 'TailwindCSS']
-    },
-    {
-      type: 'work',
-      role: 'Frontend & API Developer',
-      company: 'NovaBytes Labs',
-      location: 'Boston, MA',
-      period: '2021 — 2022',
-      description: 'Developed interactive user interfaces, customer analytics portals, and RESTful API integrations.',
-      achievements: [
-        'Developed 12+ responsive client dashboard modules with React, Chart.js, and custom state management.',
-        'Authored comprehensive Swagger/OpenAPI documentation for customer-facing REST endpoints.',
-        'Improved Lighthouse accessibility scores from 72 to 98 across core production views.'
-      ],
-      technologies: ['JavaScript', 'React', 'Node.js', 'Express', 'REST APIs', 'CSS3']
-    },
-    {
       type: 'education',
-      role: 'B.S. in Computer Science',
-      company: 'University of Technology',
-      location: 'Boston, MA',
-      period: '2017 — 2021',
-      description: 'Specialized in Distributed Systems, Data Structures & Algorithms, and Database Management Systems. Graduated Magna Cum Laude.',
+      role: 'Bachelor of Technology (B.Tech / B.S.) in Computer Science',
+      company: 'Institute of Technology & Engineering',
+      location: 'Bengaluru, India',
+      period: '2023 — 2027 (Expected)',
+      description: 'Currently pursuing an undergraduate degree in Computer Science. Core Coursework: Data Structures, Analysis of Algorithms, Database Systems (DBMS), Operating Systems, Computer Networks, and Object-Oriented Design.',
       achievements: [
-        'Dean\'s Honor List (All Semesters), GPA: 3.85 / 4.0.',
-        'Lead developer of University Autonomous Rover robotics team software sub-system.',
-        'Published undergraduate paper on distributed consensus mechanisms.'
+        'Maintained a high academic GPA of 3.85 / 4.0; ranked in top 5% of the computer science department.',
+        'Active core member of Campus Coding Club & Google Developer Student Club (GDSC).',
+        'Solved 300+ Data Structures & Algorithms challenges across LeetCode and GeeksforGeeks.'
       ],
-      technologies: ['Algorithms', 'Distributed Systems', 'Data Structures', 'C++', 'Python']
+      technologies: ['C++', 'Python', 'Data Structures', 'Algorithms', 'SQL', 'Computer Networks']
+    },
+    {
+      type: 'work',
+      role: 'Software Engineering Intern',
+      company: 'NexusTech Labs',
+      location: 'Remote',
+      period: 'Summer 2025',
+      description: 'Contributed to internal web dashboards and microservice API integrations within an agile engineering team.',
+      achievements: [
+        'Built responsive frontend UI modules in React 19 and Tailwind CSS, improving view performance and responsiveness.',
+        'Developed authenticated Express.js REST APIs and integrated PostgreSQL database queries with Prisma ORM.',
+        'Collaborated with senior engineers using Git branching, pull requests, and automated testing.'
+      ],
+      technologies: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma', 'TailwindCSS', 'Git']
+    },
+    {
+      type: 'work',
+      role: 'Full-Stack Project Lead & Hackathon Winner',
+      company: 'University Technical Society',
+      location: 'Campus / Hybrid',
+      period: '2024 — Present',
+      description: 'Building open-source tools and competing in national collegiate hackathons.',
+      achievements: [
+        'Secured 2nd place in Annual Inter-College Hackathon by building a real-time collaborative study platform.',
+        'Designed database schemas and implemented rate-limited REST endpoints for campus event portals.',
+        'Mentored junior students on JavaScript fundamentals, GitHub workflows, and modern web frameworks.'
+      ],
+      technologies: ['React', 'Node.js', 'Express', 'SQLite', 'REST APIs', 'TailwindCSS']
     }
   ];
 
